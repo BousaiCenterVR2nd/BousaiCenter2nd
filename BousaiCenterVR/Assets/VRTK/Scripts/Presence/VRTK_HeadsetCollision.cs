@@ -277,7 +277,18 @@ namespace VRTK
                     trg = true;
                 }
             }
-            
+
+            if (layerName == "Floor01") {
+                Debug.Log("11111111111111");
+                FindObjectOfType<MapChange>().trg = 1;
+            }
+
+            if (layerName == "Floor02") {
+                Debug.Log("2222222222222");
+                FindObjectOfType<MapChange>().trg = 2;
+            }
+
+
             if (parent.ignoreTriggerColliders && collider != null && collider.isTrigger)
             {
                 return;

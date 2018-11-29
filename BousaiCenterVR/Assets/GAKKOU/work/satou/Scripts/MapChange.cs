@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MapChange : MonoBehaviour {
 
+    public int trg = 2;
+
     //1階のマップのスプライト
     public Sprite f1;
 
@@ -22,16 +24,15 @@ public class MapChange : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-    }
-
-    void OnTriggerEnter(Collider collider) {
-
-        if (collider.gameObject.tag == "Floor01") {
-            sprRen.sprite = f1;
-        }
-
-        if (collider.gameObject.tag == "Floor02") {
+        switch (trg) {
+            case 2:
             sprRen.sprite = f2;
+            break;
+
+            case 1:
+            sprRen.sprite = f1;
+            break;
+
         }
 
     }

@@ -6,10 +6,10 @@ using UnityEngine.VR;
 public class Syagami : MonoBehaviour
 {
     //変数定義
-    bool ONE;           //1回だけ処理のフラグ
-    bool smokeFlg;    //煙範囲内にいるかどうか
-    Vector3 startPos;   //初期位置の代入する変数
-    Vector3 pos;        //常に更新する座標
+    public bool ONE;           //1回だけ処理のフラグ
+    public bool smokeFlg;    //煙範囲内にいるかどうか
+    public Vector3 startPos;   //初期位置の代入する変数
+    public Vector3 pos;        //常に更新する座標
 
     void OnTriggerStay(Collider other)
     {
@@ -41,7 +41,8 @@ public class Syagami : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("しゃがみ時"+startPos.y *0.98);
+        Debug.Log("スタート時"+startPos);
         if (ONE)
         {
             startPos = transform.position;
@@ -52,7 +53,7 @@ public class Syagami : MonoBehaviour
         
         if (smokeFlg == true)
         {
-            if (pos.y >= startPos.y * 0.75)
+            if (pos.y >= startPos.y * 0.98)
             {
                 FindObjectOfType<ImageEffectControl>().damageone = true;
                 FindObjectOfType<ImageEffectControl>().recovery = false;
