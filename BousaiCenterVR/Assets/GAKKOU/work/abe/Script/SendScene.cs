@@ -47,7 +47,7 @@
                 //ホワイトアウト終了後メインシーンへ
                 if (time > 2)
                 {
-                    SceneManager.LoadScene("school6");
+                    SceneManager.LoadScene("map1");
                 }
             }
             else
