@@ -281,6 +281,7 @@ namespace VRTK
             if (layerName == "Floor01") {
                 Debug.Log("11111111111111");
                 FindObjectOfType<MapChange>().trg = 1;
+                FindObjectOfType<Syagami>().floor1One = true;
             }
 
             if (layerName == "Floor02") {

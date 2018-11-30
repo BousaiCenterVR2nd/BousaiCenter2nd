@@ -7,6 +7,7 @@ public class Syagami : MonoBehaviour
 {
     //変数定義
     public bool ONE;           //1回だけ処理のフラグ
+    public bool floor1One;   //2階行ったときに一回だけ処理
     public bool smokeFlg;    //煙範囲内にいるかどうか
     public Vector3 startPos;   //初期位置の代入する変数
     public Vector3 pos;        //常に更新する座標
@@ -35,6 +36,7 @@ public class Syagami : MonoBehaviour
     void Start()
     {
         ONE = true;
+        floor1One = false;
         smokeFlg = false;
     }
 
@@ -48,6 +50,10 @@ public class Syagami : MonoBehaviour
             startPos = transform.position;
             ONE = false;
 
+        }
+        if (floor1One) {
+            startPos = transform.position;
+            floor1One = false;
         }
         pos = transform.position;
         
