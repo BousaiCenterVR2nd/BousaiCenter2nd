@@ -21,7 +21,7 @@ public class FireTime : MonoBehaviour {
     private GameObject map;
     //置いてある消火器
     [SerializeField]
-    private GameObject okimono;
+    private GameObject[] okimono = new GameObject[1];
 
     // Use this for initialization
     void Start () {
@@ -46,7 +46,8 @@ public class FireTime : MonoBehaviour {
         {
             time = 600;
             map.SetActive(true);
-            okimono.SetActive(true);
+            okimono[0].SetActive(true);
+            okimono[1].SetActive(true);
             body.SetActive(false);
             hose.SetActive(false);
         }

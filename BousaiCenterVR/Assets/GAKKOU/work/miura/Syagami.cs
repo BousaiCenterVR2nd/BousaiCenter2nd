@@ -68,12 +68,14 @@ public class Syagami : MonoBehaviour
             {
                 FindObjectOfType<ImageEffectControl>().recovery = true;
                 FindObjectOfType<ImageEffectControl>().damageone = false;
+                FindObjectOfType<ImageEffectControl>().deadTime = 0;
             }
         }
         else
         {
             FindObjectOfType<ImageEffectControl>().recovery = true;
             FindObjectOfType<ImageEffectControl>().damageone = false;
+            FindObjectOfType<ImageEffectControl>().deadTime = 0;
         }
 
       //  Debug.Log("startPos"+startPos);

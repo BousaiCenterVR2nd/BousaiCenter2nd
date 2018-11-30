@@ -213,6 +213,7 @@ namespace VRTK
         GameObject decision;
 
         private bool trg = false;
+        private bool SmokeTrg = true;
 
         protected VRTK_HeadsetCollision parent;
         protected VRTK_PolicyList targetListPolicy;
@@ -220,6 +221,7 @@ namespace VRTK
         protected virtual void Start()
         {
             trg = false;
+            SmokeTrg = true;
         }
 
         public virtual void SetParent(GameObject setParent)
@@ -281,7 +283,10 @@ namespace VRTK
             if (layerName == "Floor01") {
                 Debug.Log("11111111111111");
                 FindObjectOfType<MapChange>().trg = 1;
-                FindObjectOfType<Syagami>().floor1One = true;
+                if (SmokeTrg) {
+                    FindObjectOfType<Syagami>().floor1One = true;
+                    SmokeTrg = false;
+                }
             }
 
             if (layerName == "Floor02") {
