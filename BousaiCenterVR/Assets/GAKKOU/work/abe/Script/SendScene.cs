@@ -11,7 +11,7 @@
         private float sideFlip = -1;
         private float side = -1;
         private float smooth = 270.0f;
-        private float doorOpenAngle = 90f;
+        public float doorOpenAngle = 90f;
         private bool open = false;
         private float time = 0;
 

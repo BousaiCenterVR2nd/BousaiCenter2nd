@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
+    path: Assets/BOUSAI/Scenes/Title.unity
     guid: e1b7d8185927e7441a49e50d0137b7d9
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/BOUSAI/Scenes/Tutorial.unity
     guid: ebe35d69c01457948a165261e40ed452
   - enabled: 1
     path: Assets/BOUSAI/Scenes/map1.unity

@@ -44,7 +44,7 @@ public class FireTime : MonoBehaviour {
 
         if (time <= 0)
         {
-            time = 600;
+            time = 300;
             map.SetActive(true);
             okimono[0].SetActive(true);
             okimono[1].SetActive(true);
