@@ -20978,6 +20978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1178129818}
   - component: {fileID: 1178129821}
+  - component: {fileID: 1178129835}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -21390,7 +21391,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1178129808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edb42d1a7ff95b94a8fbd9e7fe0de0bf, type: 3}
   m_Name: 
@@ -21401,6 +21402,18 @@ MonoBehaviour:
   recovery: 0
   dead: 0
   deadTime: 0
+--- !u!114 &1178129835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178129810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a6802bb38f1b4da37a57e41222141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trg: 0
 --- !u!1001 &1185703239
 Prefab:
   m_ObjectHideFlags: 0
@@ -30242,6 +30255,7 @@ GameObject:
   - component: {fileID: 1664227480}
   - component: {fileID: 1664227479}
   - component: {fileID: 1664227478}
+  - component: {fileID: 1664227481}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -30328,6 +30342,20 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1664227481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664227476}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364a13ef71f9b40e58990911b66a39cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlindMode: 0
+  BlindIntensity: 1
+  ColorBlindShader: {fileID: 0}
 --- !u!1 &1667975277
 GameObject:
   m_ObjectHideFlags: 0
